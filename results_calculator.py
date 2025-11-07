@@ -274,5 +274,3 @@ if st.session_state.get("show_radio", False):
             st.plotly_chart(fig3, use_container_width=True)
     else:
         st.info("No history available yet. Start calculating to build your history!")
-
-
