@@ -154,7 +154,7 @@ with tab1:
            elif No9ta >= 14:
             st.warning(f"9wdtiha azbe jayb {No9ta:.2f}") 
            elif No9ta < 10:
-            st.error("💀💀")
+            st.error(f"💀💀{No9ta:.2f}")
            else:
               st.session_state["show_radio"] = True 
               st.session_state["No9ta"] = No9ta
@@ -274,3 +274,4 @@ if st.session_state.get("show_radio", False):
             st.plotly_chart(fig3, use_container_width=True)
     else:
         st.info("No history available yet. Start calculating to build your history!")
+
